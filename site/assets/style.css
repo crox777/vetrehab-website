@@ -56,9 +56,6 @@
   --sh:    0 3px 8px rgba(138,67,39,.05), 0 22px 40px -26px rgba(138,67,39,.34);
   --sh-lg: 0 6px 16px rgba(138,67,39,.06), 0 40px 70px -38px rgba(138,67,39,.42);
 
-  /* Motivo unico: una huella, usada con cuentagotas */
-  --paw: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='%239E4F30'%3E%3Cpath d='M50 55c-13.5 0-24.5 8.6-24.5 18.4C25.5 82 34.2 87 50 87s24.5-5 24.5-13.6C74.5 63.6 63.5 55 50 55z'/%3E%3Cellipse cx='25' cy='42' rx='10' ry='13'/%3E%3Cellipse cx='41' cy='29' rx='9.5' ry='13.5'/%3E%3Cellipse cx='59' cy='29' rx='9.5' ry='13.5'/%3E%3Cellipse cx='75' cy='42' rx='10' ry='13'/%3E%3C/g%3E%3C/svg%3E");
-
   --t: 240ms cubic-bezier(.22,.61,.36,1);
 }
 
@@ -353,7 +350,7 @@ strong, b { font-weight: 600; color: var(--ink-deep); }
 .sec-ink > .wrap { position: relative; z-index: 1; }
 .sec-ink h2, .sec-ink h3, .sec-ink h4 { color: var(--ink-deep); }
 .sec-ink .eyebrow { color: var(--clay-deep); }
-.sec-ink .lead { color: var(--ink-soft); }
+.sec-ink .lead { color: var(--ink-body); }
 .sec-ink p { color: var(--ink-body); }
 .sec-ink a { color: var(--clay-dark); }
 .sec-ink b, .sec-ink strong, .sec-ink .list-check b { color: var(--ink-deep); }
@@ -616,11 +613,20 @@ strong, b { font-weight: 600; color: var(--ink-deep); }
   color: var(--clay-dark);
   text-align: left;
 }
+/* Huellita dibujada solo con degradados: el motivo de la marca, en dosis unica */
 .photo-cap::before {
   content: ""; position: absolute; left: 1rem; top: 50%;
-  width: 1.5rem; height: 1.5rem; margin-top: -.75rem;
-  background: var(--paw) center/contain no-repeat;
-  opacity: .55;
+  width: 1.45rem; height: 1.35rem; margin-top: -.68rem;
+  background-image:
+    radial-gradient(closest-side, var(--clay) 97%, transparent 100%),
+    radial-gradient(closest-side, var(--clay) 97%, transparent 100%),
+    radial-gradient(closest-side, var(--clay) 97%, transparent 100%),
+    radial-gradient(closest-side, var(--clay) 97%, transparent 100%),
+    radial-gradient(closest-side, var(--clay) 97%, transparent 100%);
+  background-size: 56% 42%, 23% 30%, 23% 33%, 23% 33%, 23% 30%;
+  background-position: 50% 100%, 0% 56%, 27% 8%, 73% 8%, 100% 56%;
+  background-repeat: no-repeat;
+  opacity: .8;
 }
 
 /* Dentro del panel calido la placa sube de tono para no fundirse con el fondo */
@@ -855,7 +861,7 @@ tbody tr:hover td { background: var(--cream-2); }
 .foot-base {
   margin-top: 2.8rem; padding-top: 1.5rem; border-top: 1px solid rgba(240,232,222,.16);
   display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; justify-content: space-between;
-  font-size: .8rem; color: rgba(240,232,222,.62);
+  font-size: .8rem; color: rgba(240,232,222,.76);
 }
 
 /* ---------- Boton flotante de WhatsApp ---------- */
@@ -900,7 +906,7 @@ tbody tr:hover td { background: var(--cream-2); }
 
 /* ---------- Migas ---------- */
 
-.crumbs { font-size: .82rem; color: var(--ink-mute); padding-top: 1.6rem; }
+.crumbs { font-size: .82rem; color: var(--ink-soft); padding-top: 1.6rem; }
 .crumbs a { color: var(--clay-deep); font-weight: 500; }
 .crumbs a:hover { color: var(--clay-dark); }
 .crumbs span { margin: 0 .5rem; color: var(--clay-tint); }
@@ -911,9 +917,16 @@ tbody tr:hover td { background: var(--cream-2); }
   position: relative; overflow: hidden;
   padding: .6rem 0 clamp(2.6rem,5vw,4rem);
   background:
-    radial-gradient(52% 84% at 94% 0%, rgba(240,218,204,.7), transparent 66%),
-    radial-gradient(40% 60% at 0% 100%, rgba(235,226,214,.75), transparent 66%),
-    var(--cream);
+    radial-gradient(56% 86% at 95% 0%, rgba(240,218,204,.95), transparent 64%),
+    radial-gradient(42% 62% at 0% 100%, rgba(235,226,214,.85), transparent 64%),
+    linear-gradient(180deg, var(--clay-wash) 0%, var(--cream) 70%);
+}
+/* Arco tibio: la pagina interna arranca en curva, igual que la portada */
+.phead::after {
+  content: ""; position: absolute; z-index: 0; pointer-events: none;
+  right: clamp(-7rem, -4vw, -2rem); top: clamp(-8rem, -7vw, -3rem);
+  width: clamp(18rem, 38vw, 32rem); aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle at 44% 46%, rgba(231,201,181,.55), rgba(231,201,181,0) 68%);
 }
 .phead > .wrap { position: relative; z-index: 1; }
 .phead h1 { max-width: 17ch; margin-top: 1.2rem; }

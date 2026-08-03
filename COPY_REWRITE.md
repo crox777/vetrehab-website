@@ -29,7 +29,11 @@ Apoyo: `Perros y gatos que amanecen duros, acortan la caminata o dejaron de subi
 H1: `Que vuelva a ser <em>el mismo de siempre</em>`
 Apoyo: `El dolor no se queja, se nota en el silencio: cuando deja de saltar al sillón y ya no te busca tanto para jugar. Somos expertos en devolverles la movilidad y las ganas de explorar el mundo, en Sabana Norte y en San Pablo de Heredia.`
 
-**Elegida: A.** Es la frase que la propia Dra. Caro escribió, nombra el sentimiento antes que el servicio, y la línea de apoyo entrega las tres señales concretas y el reencuadre sin todavía hablar de la clínica.
+**Elegida: NINGUNA de las 5.** René rechazó la opción A: "el dolor no se queja" no es algo que diría una persona real en español. El caption 13 es copy de agencia, no la voz de la Dra. Caro. Regla nueva: el hero debe pasar la prueba "¿alguien que conozco diría esto en voz alta?". El registro correcto es la pregunta simple de síntoma (caption 9, textual de ellos: "¿Tu mascota se mueve más lento?").
+
+**Hero definitivo (registro natural):**
+H1: `¿Tu mascota se mueve más lento <em>que antes</em>?`
+Apoyo: `Le cuesta levantarse, ya no salta al carro o se queda atrás en las caminatas. Muchas veces no es la edad, es dolor que se puede tratar. Atendemos perros y gatos que se recuperan de una cirugía de rodilla o de columna, y también a los que llevan meses con artrosis. Empezamos con una valoración de movilidad y de ahí salís con su plan y los ejercicios para la casa.`
 
 ---
 
@@ -38,13 +42,13 @@ Apoyo: `El dolor no se queja, se nota en el silencio: cuando deja de saltar al s
 **H1 (hero)**
 ```
 CURRENT: Rehabilitación veterinaria para que <em>vuelva a caminar bien</em>
-NEW:     El dolor no se queja, <em>se nota en el silencio</em>
+NEW:     ¿Tu mascota se mueve más lento <em>que antes</em>?
 ```
 
 **p (hero lead)**
 ```
 CURRENT: ¿A tu perrito le cuesta levantarse, dejó de subirse al carro o ya no se mueve como antes? Atendemos perros y gatos que se recuperan de una cirugía de rodilla o de columna, y también a los que llevan meses con dolor de artrosis. Empezamos con una valoración de movilidad y un plan de rehabilitación, y de ahí salís con los ejercicios que le vas a hacer en casa.
-NEW:     Cuando deja de saltar al sillón, corre menos en el parque o ya no te busca tanto para jugar, muchas veces no es la edad, es una molestia que se puede tratar. Somos expertos en devolverles la movilidad y las ganas de explorar el mundo: perros y gatos que salen de una cirugía de rodilla o de columna, y también los que llevan meses con dolor de artrosis. Empezamos con la valoración de movilidad y de ahí salís con su plan y los ejercicios para la casa.
+NEW:     Le cuesta levantarse, ya no salta al carro o se queda atrás en las caminatas. Muchas veces no es la edad, es dolor que se puede tratar. Atendemos perros y gatos que se recuperan de una cirugía de rodilla o de columna, y también a los que llevan meses con artrosis. Empezamos con una valoración de movilidad y de ahí salís con su plan y los ejercicios para la casa.
 ```
 
 **CTA (botón primario del hero)** — ojo: `Escribinos por WhatsApp` aparece dos veces en el archivo. Usar el ancla larga para pegar solo la del hero.
@@ -69,17 +73,7 @@ CURRENT: Es de nuestras terapias favoritas porque el paciente recupera estabilid
 NEW:     El paciente recupera estabilidad y confianza rápido, y eso la familia lo nota en las primeras sesiones. Nuestra HydroPhysio está en la sede de Sabana y es uno de los dos equipos de este tipo que operan en clínicas veterinarias privadas del país.
 ```
 
-**H2 (sección 04, casos frecuentes)**
-```
-CURRENT: Con qué llegan la mayoría
-NEW:     Lo que en casa se lee como pereza o vejez
-```
-
-**p (sección 04, lead — evita repetir el reencuadre que ahora carga el H2)**
-```
-CURRENT: Casi nada de lo que ves en casa es pereza o simple vejez. Cada caso tiene su propia página, con lo que vale la pena saber antes de la primera cita y con los límites de lo que la terapia puede lograr.
-NEW:     Casi todo eso es una articulación o una espalda que duele, y casi todo se puede tratar. Cada caso tiene su propia página, con lo que vale la pena saber antes de la primera cita y con los límites de lo que la terapia puede lograr.
-```
+**Sección 04 (casos frecuentes): SIN CAMBIOS.** "Con qué llegan la mayoría" y su lead ya están en registro natural; el reemplazo propuesto ("Lo que en casa se lee como pereza o vejez") era escritura de copywriter, descartado.
 
 **p (sección 05, historia de la clínica — se le agrega la misión de los 6 años)**
 ```
@@ -100,7 +94,7 @@ NEW:     Cuánto peso le quita el agua
 **H2 (sección 02)**
 ```
 CURRENT: Qué casos se benefician
-NEW:     A quién le rinde el agua
+NEW:     Para cuáles casos sirve más
 ```
 
 **H2 (sección 03)**
@@ -131,11 +125,7 @@ CURRENT: Salchichas y razas condrodistróficas
 NEW:     Por qué les pasa tanto a los salchichas
 ```
 
-**p (sección 04, límites — abre limp)**
-```
-CURRENT: Preferimos decirlo antes de que una familia invierta meses de esfuerzo esperando algo que no va a pasar.
-NEW:     Lo decimos antes, no después: hay cosas que la rehabilitación no logra, y ninguna familia debería descubrirlo con meses de esfuerzo encima.
-```
+**p (sección 04, límites): SIN CAMBIOS.** El texto actual ya es natural; el reemplazo ("Lo decimos antes, no después") era un remate de contraste, descartado.
 
 ---
 
@@ -179,11 +169,7 @@ NEW:     Contanos qué dejó de hacer y agendá su valoración
 
 ## 7. artrosis-perro-mayor.html
 
-**H2 (sección 01)**
-```
-CURRENT: El perro esconde el dolor y la familia lo lee como edad
-NEW:     En casa se ve tranquilo, no adolorido
-```
+**H2 (sección 01): SIN CAMBIOS.** El actual ya es directo; "En casa se ve tranquilo, no adolorido" era un contraste de copywriter, descartado.
 
 **H2 (sección 02)**
 ```
@@ -229,13 +215,7 @@ NEW:     Escribinos y contanos el caso de tu chineado
 
 ## 9. para-veterinarios.html
 
-Registro colegial intacto. Solo el hero.
-
-**H1**
-```
-CURRENT: Referí el caso y el paciente vuelve con vos
-NEW:     Referí el caso. El paciente sigue siendo tuyo.
-```
+Registro colegial intacto. **H1 SIN CAMBIOS**: "Referí el caso y el paciente vuelve con vos" ya es natural; la versión de dos frases con punto era un remate publicitario, descartada.
 
 **H2 (sección 03, modalidades) y su lead**
 ```
