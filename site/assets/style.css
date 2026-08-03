@@ -412,9 +412,8 @@ strong, b { font-weight: 600; color: var(--ink-deep); }
 
 .hero h1 { max-width: 15ch; }
 .hero h1 em {
-  display: block;
   font-family: var(--serif); font-style: italic; font-weight: 600;
-  font-size: 1.18em; line-height: 1;
+  font-size: 1.12em; line-height: 1;
   letter-spacing: -.012em; color: var(--clay-deep);
 }
 .hero-lead { margin-top: 1.5rem; max-width: 46ch; }
