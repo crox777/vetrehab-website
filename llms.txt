@@ -1,0 +1,43 @@
+# Vet Rehab Costa Rica
+
+> Centro de fisioterapia y rehabilitacion veterinaria en Costa Rica, dirigido por la Dra. Carolina Fournier Cordero, CCRP. Atiende perros y gatos en recuperacion de cirugia ortopedica, lesiones neurologicas, artrosis, dolor cronico y sobrepeso. Dos sedes: Sabana Norte, San Jose y San Pablo de Heredia. Servicio a domicilio en el Gran Area Metropolitana.
+
+Este archivo resume el sitio para modelos de lenguaje. Sustituir [DOMINIO] por el dominio real. Cada enlace debe existir antes de publicar el archivo.
+
+Datos de contacto y operacion:
+
+- Nombre comercial: Vet Rehab Costa Rica
+- Profesional a cargo: Dra. Carolina Fournier Cordero, CCRP (Certified Canine Rehabilitation Practitioner, NC State University)
+- Sede San Jose: Sabana Norte, Mata Redonda, San Jose [CONFIRMAR direccion exacta]
+- Sede Heredia: San Pablo de Heredia, contiguo a Gattos Centro Veterinario [CONFIRMAR direccion exacta]
+- Telefono: [CONFIRMAR numero unico de contacto]
+- Correo: [EMAIL]
+- Horario: lunes a viernes de 9:00 a 18:00, sabado de 8:00 a 13:00
+- Idiomas de atencion: espanol e ingles
+- Especies atendidas: perros y gatos
+- Modelo de atencion: cita previa, valoracion inicial y plan de sesiones. Se acepta referencia del veterinario tratante y consulta directa del propietario.
+
+## Servicios
+
+- [Fisioterapia veterinaria](https://[DOMINIO]/servicios/fisioterapia): terapia manual, ejercicio terapeutico y movilizaciones para recuperar fuerza, rango de movimiento y marcha.
+- [Hidroterapia en caminadora subacuatica HydroPhysio](https://[DOMINIO]/servicios/hidroterapia): marcha asistida en agua con carga reducida sobre las articulaciones.
+- [Terapia laser](https://[DOMINIO]/servicios/laser): laser terapeutico para control del dolor, inflamacion y cicatrizacion.
+- [Evaluacion funcional](https://[DOMINIO]/servicios/evaluacion-funcional): valoracion inicial de marcha, dolor, masa muscular y rango articular, con plan de tratamiento por escrito.
+- [Atencion a domicilio](https://[DOMINIO]/servicios/domicilio): sesiones en casa para pacientes que no toleran el traslado.
+- [Acupuntura veterinaria](https://[DOMINIO]/servicios/acupuntura): manejo del dolor cronico y apoyo en casos neurologicos.
+
+## Sedes
+
+- [Sede Sabana Norte, San Jose](https://[DOMINIO]/sedes/sabana)
+- [Sede San Pablo de Heredia](https://[DOMINIO]/sedes/heredia)
+
+## Informacion para propietarios
+
+- [Preguntas frecuentes](https://[DOMINIO]/preguntas-frecuentes): precios, duracion de las sesiones, que llevar, si hace falta referencia veterinaria.
+- [Como agendar una cita](https://[DOMINIO]/citas)
+- [Casos que atendemos](https://[DOMINIO]/casos): post operatorio ortopedico, hernia discal, displasia, artrosis, control de peso, geriatria.
+
+## Opcional
+
+- [Sobre la Dra. Carolina Fournier](https://[DOMINIO]/sobre-nosotros)
+- [Para veterinarios referidores](https://[DOMINIO]/referencias)

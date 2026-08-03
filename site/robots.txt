@@ -1,0 +1,68 @@
+# robots.txt - Vet Rehab Costa Rica
+# Cambiar el dominio si el sitio no queda en vetrehab.cr.
+
+# Regla base: cualquier rastreador puede leer todo el sitio.
+User-agent: *
+Allow: /
+
+# Googlebot: indexacion normal de la Busqueda de Google.
+User-agent: Googlebot
+Allow: /
+
+# Google-Extended: permiso separado para que Gemini y los resumenes de IA
+# de Google usen el contenido. No afecta el posicionamiento en la Busqueda.
+User-agent: Google-Extended
+Allow: /
+
+# Bingbot: rastreador de Bing, que tambien alimenta a Microsoft Copilot.
+User-agent: Bingbot
+Allow: /
+
+# GPTBot: rastreador de OpenAI que alimenta el conocimiento de ChatGPT.
+User-agent: GPTBot
+Allow: /
+
+# OAI-SearchBot: indexa el sitio para los resultados de busqueda en ChatGPT.
+User-agent: OAI-SearchBot
+Allow: /
+
+# ChatGPT-User: entra a la pagina cuando un usuario la solicita en ChatGPT.
+User-agent: ChatGPT-User
+Allow: /
+
+# PerplexityBot: rastreador de Perplexity para su indice de respuestas.
+User-agent: PerplexityBot
+Allow: /
+
+# Perplexity-User: entra a la pagina cuando un usuario pide esa fuente.
+User-agent: Perplexity-User
+Allow: /
+
+# ClaudeBot: rastreador de Anthropic que alimenta a Claude.
+User-agent: ClaudeBot
+Allow: /
+
+# Claude-SearchBot: indexa el sitio para la busqueda dentro de Claude.
+User-agent: Claude-SearchBot
+Allow: /
+
+# Claude-User: entra a la pagina cuando un usuario de Claude pide esa fuente.
+User-agent: Claude-User
+Allow: /
+
+# Applebot y Applebot-Extended: Siri, Spotlight y Apple Intelligence.
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# meta-externalagent: rastreador de Meta para sus asistentes de IA.
+User-agent: meta-externalagent
+Allow: /
+
+# Amazonbot: rastreador de Amazon, alimenta a Alexa y Rufus.
+User-agent: Amazonbot
+Allow: /
+
+Sitemap: https://vetrehab.cr/sitemap.xml
