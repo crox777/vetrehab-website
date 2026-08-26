@@ -1,0 +1,20 @@
+name = "vetrehab-gate"
+main = "worker/src/index.js"
+compatibility_date = "2026-08-01"
+
+# The static site is served by the Worker itself, so there is no public
+# origin URL sitting outside the password gate.
+[assets]
+directory = "site"
+binding = "ASSETS"
+run_worker_first = true
+not_found_handling = "404-page"
+
+# GATE_USER / GATE_PASS are set with:
+#   wrangler secret put GATE_USER
+#   wrangler secret put GATE_PASS
+
+routes = [
+  { pattern = "vetrehab.cr", custom_domain = true },
+  { pattern = "www.vetrehab.cr", custom_domain = true },
+]

@@ -972,27 +972,3 @@ tbody tr:hover td { background: var(--cream-2); }
 }
 
 .nowrap { white-space: nowrap; }
-
-#gate-overlay {
-  position: fixed; inset: 0; z-index: 9999;
-  background: #3D3C4C;
-  display: flex; align-items: center; justify-content: center;
-  padding: 24px;
-}
-.gate-box {
-  background: #fff; border-radius: 12px; padding: 32px;
-  max-width: 360px; width: 100%; text-align: center;
-  box-shadow: 0 20px 60px rgba(0,0,0,.3);
-}
-.gate-logo { width: 56px; height: 56px; border-radius: 50%; margin-bottom: 12px; }
-.gate-title { font-weight: 600; font-size: 1.1rem; margin: 0 0 8px; color: #3D3C4C; }
-.gate-sub { font-size: .85rem; color: #666; margin: 0 0 16px; }
-#gate-form { display: flex; gap: 8px; }
-#gate-form input {
-  flex: 1; padding: 10px 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem;
-}
-#gate-form button {
-  padding: 10px 16px; border: none; border-radius: 8px;
-  background: #3D3C4C; color: #fff; font-weight: 600; cursor: pointer;
-}
-.gate-error { color: #b3261e; font-size: .8rem; margin-top: 10px; }
