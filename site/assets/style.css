@@ -972,3 +972,18 @@ tbody tr:hover td { background: var(--cream-2); }
 }
 
 .nowrap { white-space: nowrap; }
+
+/* Fotos reales dentro del marco .photo */
+.photo > img {
+  position: absolute; inset: 0; z-index: 0;
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.photo.has-img::before { opacity: 0; }
+.photo.has-img { background: var(--sand); }
+.hero-photo { aspect-ratio: 4 / 5; max-height: 34rem; }
+@media (min-width: 960px) { .hero-photo { aspect-ratio: 4 / 5; } }
+.testimonios { display: grid; gap: 1.2rem; }
+@media (min-width: 860px) { .testimonios { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+.testimonio { margin: 0; padding: 1.5rem 1.6rem; background: var(--white); border-radius: var(--r-lg); box-shadow: var(--sh); }
+.testimonio p { margin: 0; font-size: .97rem; line-height: 1.6; color: var(--ink-soft); }
+.testimonio figcaption { margin-top: .9rem; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--clay-deep); font-weight: 600; }

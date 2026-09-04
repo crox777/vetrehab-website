@@ -3,11 +3,10 @@ main = "worker/src/index.js"
 compatibility_date = "2026-08-01"
 workers_dev = true
 
-# Custom domain routes, enabled once vetrehab.cr is a zone on this account:
-# routes = [
-#   { pattern = "vetrehab.cr", custom_domain = true },
-#   { pattern = "www.vetrehab.cr", custom_domain = true },
-# ]
+routes = [
+  { pattern = "vetrehab.cr", custom_domain = true },
+  { pattern = "www.vetrehab.cr", custom_domain = true },
+]
 
 # GATE_USER / GATE_PASS are set with:
 #   wrangler secret put GATE_USER
