@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "generado": "2026-09-04T03:00:00Z",
+  "corte": {
+    "financiero": "2026-07-31",
+    "agenda": "2026-08-18"
+  },
+  "indicadores": [
+    {
+      "id": "F1",
+      "perspectiva": "financiera",
+      "nombre": "Ingresos por sede",
+      "definicion": "Ingresos facturados por sede, netos de IVA, sumados por mes; se reporta el mes y el acumulado del año",
+      "fuente": "Estado de resultados mensual de la contadora, cargado en la hoja Entradas",
+      "dueno": "René",
+      "frecuencia": "Mensual",
+      "meta": "Cierre 2026 entre ₡181M y ₡190M; 2027 entre ₡195M y ₡215M",
+      "estado": "verde",
+      "valor": "₡18,5M",
+      "detalle": "Enero a julio: Sabana ₡71,0M, Heredia ₡38,1M, total ₡109,1M. Julio ₡18,5M",
+      "serie": {
+        "unidad": "₡M",
+        "meses": ["2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07"],
+        "valores": {
+          "Sabana": [null, null, null, null, 8.5, 9.5, 11.9],
+          "Heredia": [null, null, null, null, 5.1, 5.3, 6.6]
+        }
+      },
+      "nota": "Proyección de cierre por promedio simple del año en curso: ₡187,0M. El desglose por sede de enero a abril todavía no está cargado en la hoja Entradas."
+    },
+    {
+      "id": "F2",
+      "perspectiva": "financiera",
+      "nombre": "Margen operativo",
+      "definicion": "Resultado operativo entre ingresos, antes de depreciación, intereses e impuestos, por mes y acumulado; se calcula solo sobre meses con gastos completos",
+      "fuente": "Estado de resultados mensual, cargado en la hoja Entradas",
+      "dueno": "René",
+      "frecuencia": "Mensual, lectura trimestral",
+      "meta": "Positivo en el segundo semestre de 2026; margen normalizado ≥8% en 2027 sin el ingreso por vencimiento de paquetes",
+      "estado": "rojo",
+      "valor": "−2,9%",
+      "detalle": "Enero a julio de 2026: −2,9% reportado (−₡3,2M). Mayo a julio +2,0%, provisional: la planilla de mayo está incompleta y el cierre de julio va sin honorarios contables ni INS",
+      "nota": "El estado de resultados no registra depreciación (la acumulada en balance es ₡12,1M) ni intereses del leasing de la cinta de hidroterapia (saldo ₡11,2M al 31 de julio). Con ambas líneas el acumulado ronda −5%."
+    },
+    {
+      "id": "F4",
+      "perspectiva": "financiera",
+      "nombre": "Pasivo de sesiones prepagadas",
+      "definicion": "Paquetes vendidos menos sesiones entregadas, valorado al precio pagado, neto de IVA; se reporta el total y la parte de pacientes con actividad en los últimos 90 días",
+      "fuente": "Registro del pasivo prepagado alimentado por recepción",
+      "dueno": "Recepción de cada sede, con René como revisor",
+      "frecuencia": "Mensual",
+      "meta": "Que el pasivo no crezca más rápido que la venta de paquetes. En 2027, redención ≥85% a los 180 días de los paquetes vendidos cada mes, en ambas sedes",
+      "estado": "amarillo",
+      "valor": "₡10,0M",
+      "detalle": "Corte julio de 2026: ₡10,0M en pacientes con actividad en los últimos 90 días. Histórico ₡19,6M",
+      "nota": "Las filas en ₡0 del tracker se toman como canjes de paquete, supuesto pendiente de confirmar con una muestra. Sin mes anterior guardado, el estado queda en amarillo hasta la segunda corrida."
+    },
+    {
+      "id": "F5",
+      "perspectiva": "financiera",
+      "nombre": "Colchón de caja",
+      "definicion": "Saldo en bancos al cierre de mes dividido entre el gasto operativo mensual promedio de los últimos seis meses, en meses",
+      "fuente": "Balance mensual y estado de resultados, cargados en la hoja Entradas",
+      "dueno": "René",
+      "frecuencia": "Mensual",
+      "meta": "Dos meses de gasto operativo a mitad de 2027. Si la caja cierra un mes debajo de ₡12M se activa el plan de repliegue",
+      "estado": "rojo",
+      "valor": "1,12 meses",
+      "detalle": "Al 31 de julio de 2026: ₡17,9M de caja entre ₡16,0M de gasto mensual promedio",
+      "serie": {
+        "unidad": "₡M",
+        "meses": ["2026-05", "2026-06", "2026-07"],
+        "valores": {
+          "Caja": [18.5, 18.2, 17.9]
+        }
+      },
+      "nota": "El gasto mensual promedio es el total de gastos más costo de ventas de enero a julio de 2026 dividido entre siete. Con la base de junio y julio el colchón es 1,09 meses."
+    },
+    {
+      "id": "F6",
+      "perspectiva": "financiera",
+      "nombre": "Punto de equilibrio por sede",
+      "definicion": "Ingreso mensual por sede necesario para cubrir sus costos directos, con los honorarios de Carolina asignados 23,7% a Heredia como línea de ajuste sobre el estado que entrega la contadora",
+      "fuente": "Estado mensual por sede de la contadora más el ajuste de honorarios, cargado en la hoja Entradas",
+      "dueno": "René",
+      "frecuencia": "Mensual",
+      "meta": "Cada sede cubre sus costos directos; Heredia sostenido tres meses seguidos antes de la decisión de enero de 2027",
+      "estado": "sin_linea_base",
+      "valor": "Sin línea base",
+      "detalle": "Por instalar. Arranca con el primer estado mensual por sede, en setiembre de 2026",
+      "nota": "Referencia de la estrategia: Heredia necesita entre ₡6,3M y ₡6,5M al mes con el ajuste de honorarios."
+    },
+    {
+      "id": "C1",
+      "perspectiva": "clientes",
+      "nombre": "Satisfacción del cliente",
+      "definicion": "Encuesta de una pregunta por WhatsApp después de la cita, calificación de 0 a 10; se reporta el promedio y el número de respuestas",
+      "fuente": "Encuesta por WhatsApp de cada sede, resumida en la hoja Entradas",
+      "dueno": "Recepción de cada sede",
+      "frecuencia": "Mensual",
+      "meta": "Promedio superior a 7,5 con al menos 30 respuestas al mes",
+      "estado": "sin_linea_base",
+      "valor": "Sin línea base",
+      "detalle": "Por instalar. Arranca en el cuarto trimestre de 2026, después del piloto de avance clínico",
+      "nota": "La encuesta se envía por WhatsApp después de la cita y recepción anota el promedio y el número de respuestas del mes en la hoja Entradas."
+    },
+    {
+      "id": "C2",
+      "perspectiva": "clientes",
+      "nombre": "Clientes nuevos y su origen",
+      "definicion": "Conteo de clientes nuevos por mes y por sede, y proporción con origen registrado en el campo de dos partes (canal cerrado; clínica y doctor si es referencia veterinaria)",
+      "fuente": "Registro de clientes nuevos de cada sede",
+      "dueno": "Recepción de cada sede",
+      "frecuencia": "Mensual",
+      "meta": "Origen registrado en más del 90% de los clientes nuevos; nombre del referidor en más del 90% de las referencias veterinarias",
+      "estado": "sin_linea_base",
+      "valor": "61 clientes al mes",
+      "detalle": "Base 2026: 61 clientes nuevos al mes. Origen registrado en 22% del padrón",
+      "nota": "Por instalar la captura de dos partes, que arranca en setiembre de 2026. El indicador se calcula sobre las filas del registro que traen fecha de registro."
+    },
+    {
+      "id": "C4",
+      "perspectiva": "clientes",
+      "nombre": "Renovación de paquetes",
+      "definicion": "Clientes que agotaron un paquete en el mes y compraron otro dentro de los 30 días siguientes, entre el total que agotó",
+      "fuente": "Registro del pasivo prepagado, con la fecha de compra de cada paquete",
+      "dueno": "Recepción de cada sede",
+      "frecuencia": "Mensual",
+      "meta": "Meta fijada después de un trimestre con fecha de compra registrada",
+      "estado": "sin_linea_base",
+      "valor": "Sin línea base",
+      "detalle": "Por instalar: requiere la columna de fecha de venta llena. Referencia exploratoria del segundo trimestre de 2026: Sabana 17% a 27%, Heredia 0% a 4%",
+      "nota": "El tracker registra el saldo de sesiones en la fila de la siguiente cita, no la fecha de compra del paquete. Por eso una ventana de 30 días mide a la vez que el cliente vuelva y que compre."
+    },
+    {
+      "id": "C5",
+      "perspectiva": "clientes",
+      "nombre": "Pacientes inactivos",
+      "definicion": "Pacientes con al menos una cita y ninguna en los últimos 90 días, por sede; se reporta aparte el grupo con una sola cita en su historia",
+      "fuente": "Trackers de citas",
+      "dueno": "Recepción de cada sede",
+      "frecuencia": "Mensual",
+      "meta": "Que el conteo de cada sede baje respecto del mes anterior y que la lista se trabaje cada mes con la ficha del paciente enfrente",
+      "estado": "amarillo",
+      "valor": "748 pacientes",
+      "detalle": "Sabana 471 de 795 (59,2%), con una sola cita 182; Heredia 277 de 441 (62,8%), con una sola cita 82",
+      "nota": "Corte del 13 y 14 de julio de 2026. La identidad del paciente usa el código de Qvet cuando existe y el nombre normalizado cuando falta. El conteo es una lista de trabajo para recepción, no una medida de deserción: incluye pacientes que terminaron su tratamiento y pacientes fallecidos sin marcar. Sin mes anterior guardado, el estado queda en amarillo hasta la segunda corrida."
+    },
+    {
+      "id": "P1",
+      "perspectiva": "procesos",
+      "nombre": "Citas por mes por sede",
+      "definicion": "Citas atendidas por mes en cada sede, sin ventas de productos",
+      "fuente": "Trackers de citas y Qvet",
+      "dueno": "Recepción Sabana y recepción Heredia",
+      "frecuencia": "Mensual",
+      "meta": "Sabana 315 al mes (nivel del segundo semestre de 2025); Heredia creciendo sobre 140",
+      "estado": "amarillo",
+      "valor": "433 citas",
+      "detalle": "Junio de 2026: Sabana 295 (meta 315), Heredia 138 (meta 140)",
+      "serie": {
+        "unidad": "citas",
+        "meses": ["2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06"],
+        "valores": {
+          "Sabana": [310, 360, 306, 314, 364, 296, 249, 355, 309, 289, 264, 268, 295],
+          "Heredia": [null, 116, 131, 0, 182, 175, 183, 221, 152, 146, 129, 131, 138]
+        }
+      },
+      "nota": "Solo entran las filas con tipo de cita. Las ventas de producto no traen tipo y quedan fuera. Setiembre de 2025 en Sabana se reconstruyó de las etiquetas escritas a mano del tipo «4 set». El tracker de Heredia arranca en julio de 2025 y no trae filas en setiembre de 2025."
+    },
+    {
+      "id": "P2",
+      "perspectiva": "procesos",
+      "nombre": "Domicilios por mes",
+      "definicion": "Citas de tipo domicilio por mes y por sede",
+      "fuente": "Trackers de citas",
+      "dueno": "Recepción de cada sede",
+      "frecuencia": "Mensual",
+      "meta": "Sabana alrededor de 70 al mes; Heredia sobre 10",
+      "estado": "verde",
+      "valor": "92 domicilios",
+      "detalle": "Junio de 2026: Sabana 79 (meta 70), Heredia 13 (meta 10)",
+      "serie": {
+        "unidad": "domicilios",
+        "meses": ["2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06"],
+        "valores": {
+          "Sabana": [69, 94, 66, 78, 88, 70, 78, 66, 72, 54, 65, 61, 79],
+          "Heredia": [null, 25, 17, 0, 21, 19, 17, 22, 5, 18, 7, 7, 13]
+        }
+      },
+      "nota": "Las filas de domicilio del tracker traen el ingreso bruto de IVA, a diferencia de las de clínica. Ese detalle no afecta este conteo."
+    },
+    {
+      "id": "P3",
+      "perspectiva": "procesos",
+      "nombre": "Cancelaciones y no presentaciones",
+      "definicion": "Citas canceladas o no presentadas sobre el total agendado, por sede",
+      "fuente": "Columna de estado del tracker",
+      "dueno": "Recepción de cada sede",
+      "frecuencia": "Mensual",
+      "meta": "Meta después de un trimestre completo de medición",
+      "estado": "sin_linea_base",
+      "valor": "Sin línea base",
+      "detalle": "Por instalar. Arranca en octubre de 2026 con el registro de cancelaciones",
+      "nota": "Los trackers todavía no llevan columna de estado de la cita. El script la detecta sola cuando aparezca y empieza a calcular el porcentaje."
+    },
+    {
+      "id": "P5",
+      "perspectiva": "procesos",
+      "nombre": "Ocupación de agenda",
+      "definicion": "Sesiones realizadas entre los espacios disponibles del mes, por sede y por bloque (mañana y tarde)",
+      "fuente": "Trackers de citas más la capacidad de espacios definida con recepción",
+      "dueno": "Recepción de cada sede",
+      "frecuencia": "Mensual",
+      "meta": "Meta después de un trimestre de medición",
+      "estado": "sin_linea_base",
+      "valor": "Sin línea base",
+      "detalle": "Por instalar. Requiere definir los espacios por día y por sede. Referencia: la tarde de Sabana de lunes a jueves tiene 2,4 citas por día",
+      "nota": "El cálculo arranca cuando la hoja Entradas traiga los espacios disponibles del mes en p5_espacios_sabana y p5_espacios_heredia."
+    },
+    {
+      "id": "E1",
+      "perspectiva": "equipo",
+      "nombre": "Carga clínica de Carolina",
+      "definicion": "Porcentaje de las citas de la empresa que atiende ella, más el conteo de sus domicilios",
+      "fuente": "Trackers de citas",
+      "dueno": "René",
+      "frecuencia": "Mensual",
+      "meta": "Tope de 20%. La cifra se mantiene o baja; cuatro horas semanales protegidas para estrategia",
+      "estado": "verde",
+      "valor": "13,4%",
+      "detalle": "Junio de 2026: 58 de 433 citas de la empresa (13,4%), de las cuales 40 domicilios. En Sabana 47 de 295 (15,9%), 39 de ellas domicilios",
+      "serie": {
+        "unidad": "%",
+        "meses": ["2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06"],
+        "valores": {
+          "Carga de Carolina": [32.3, 30.0, 22.4, 35.4, 26.4, 19.7, 30.6, 20.1, 11.9, 0.0, 0.0, 0.0, 13.4]
+        }
+      },
+      "nota": "Los tres meses en cero son la licencia de maternidad, de marzo a mayo de 2026. La atribución sale de la columna de doctora del tracker, que solo identifica a Carolina de forma confiable."
+    },
+    {
+      "id": "E2",
+      "perspectiva": "equipo",
+      "nombre": "Estabilidad del equipo",
+      "definicion": "Altas y bajas de personal por trimestre sobre la planilla base",
+      "fuente": "Planilla mensual, resumida en la hoja Entradas",
+      "dueno": "Carolina",
+      "frecuencia": "Trimestral",
+      "meta": "Rotación voluntaria cero en el semestre",
+      "estado": "verde",
+      "valor": "7 personas",
+      "detalle": "Trimestre a julio de 2026: planilla base 7 personas (2 administrativas, 4 veterinarias, 1 asistente), altas 0, bajas 0, de ellas voluntarias 0",
+      "nota": "Se acumulan los tres meses del trimestre que cierra en el mes leído de la hoja Entradas."
+    }
+  ]
+}

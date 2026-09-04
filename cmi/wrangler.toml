@@ -1,0 +1,26 @@
+name = "vetrehab-cmi"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+workers_dev = false
+
+routes = [
+  { pattern = "cmi.vetrehab.cr", custom_domain = true },
+]
+
+# Secrets (wrangler secret put): INGEST_TOKEN
+# Vars: ACCESS_TEAM_DOMAIN (e.g. fovet.cloudflareaccess.com) and ACCESS_AUD
+# (the Access application audience tag). Until both are set the dashboard
+# answers 503 and only /ingest works.
+[vars]
+ACCESS_TEAM_DOMAIN = ""
+ACCESS_AUD = ""
+
+[[kv_namespaces]]
+binding = "CMI_DATA"
+id = "bb17c77fc3774240bdb9db6a94392829"
+
+[assets]
+directory = "site"
+binding = "ASSETS"
+run_worker_first = true
+not_found_handling = "404-page"

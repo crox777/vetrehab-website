@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Cuadro de Mando Integral · Vet Rehab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
+<link rel="stylesheet" href="cmi.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <div>
+      <p class="kicker">Fovet Rehabilitación Veterinaria · Comité Directivo</p>
+      <h1>Cuadro de Mando Integral</h1>
+      <p class="corte" id="corte">Cargando…</p>
+    </div>
+    <div class="top-right">
+      <div class="resumen" id="resumen" aria-label="Resumen de estados"></div>
+      <label class="ver">Versión
+        <select id="versiones" aria-label="Versión del cuadro"></select>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <p class="aviso" id="aviso" hidden></p>
+  <section class="persp" data-p="financiera"><h2>Perspectiva financiera</h2><div class="grid"></div></section>
+  <section class="persp" data-p="clientes"><h2>Perspectiva de clientes</h2><div class="grid"></div></section>
+  <section class="persp" data-p="procesos"><h2>Perspectiva de procesos internos</h2><div class="grid"></div></section>
+  <section class="persp" data-p="equipo"><h2>Perspectiva de equipo y aprendizaje</h2><div class="grid"></div></section>
+</main>
+
+<footer class="wrap pie">
+  <p>El cuadro se actualiza cada noche desde las hojas de cálculo de FOVET Restringido. Los indicadores financieros salen del estado de resultados y balance mensuales que entrega la contadora; los operativos, de los trackers de citas y los registros de recepción. Cada indicador muestra su fecha de corte. Un indicador sin dato dos meses seguidos se arregla o se elimina.</p>
+  <p id="generado"></p>
+</footer>
+
+<template id="card">
+  <article class="card">
+    <div class="card-top">
+      <span class="id"></span>
+      <span class="estado"></span>
+    </div>
+    <h3 class="nombre"></h3>
+    <p class="valor"></p>
+    <p class="detalle"></p>
+    <svg class="spark" viewBox="0 0 320 90" preserveAspectRatio="none" role="img" hidden></svg>
+    <p class="leyenda" hidden></p>
+    <p class="meta"><b>Meta.</b> <span></span></p>
+    <details class="mas">
+      <summary>Definición y fuente</summary>
+      <p class="definicion"></p>
+      <p class="fuente"></p>
+      <p class="nota" hidden></p>
+    </details>
+  </article>
+</template>
+
+<script src="cmi.js"></script>
+</body>
+</html>
