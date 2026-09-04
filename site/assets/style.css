@@ -978,11 +978,13 @@ tbody tr:hover td { background: var(--cream-2); }
 .photo.has-img { background: var(--sand); }
 .hero-photo { aspect-ratio: 4 / 5; max-height: 34rem; }
 @media (min-width: 960px) { .hero-photo { aspect-ratio: 4 / 5; } }
-.testimonios { display: grid; gap: 1.2rem; }
-@media (min-width: 860px) { .testimonios { grid-template-columns: repeat(3, minmax(0,1fr)); } }
-.testimonio { margin: 0; padding: 1.5rem 1.6rem; background: var(--white); border-radius: var(--r-lg); box-shadow: var(--sh); }
-.testimonio p { margin: 0; font-size: .97rem; line-height: 1.6; color: var(--ink-soft); }
-.testimonio figcaption { margin-top: .9rem; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--clay-deep); font-weight: 600; }
+.testimonios { display: grid; gap: 1.2rem; align-items: start; }
+@media (min-width: 860px) { .testimonios { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.4rem; } }
+.testimonio { position: relative; margin: 0; padding: 2.4rem 1.7rem 1.6rem; background: var(--white); border-radius: var(--r-lg); box-shadow: var(--sh); }
+.testimonio::before { content: "\201C"; position: absolute; top: .55rem; left: 1.3rem; font-family: var(--serif); font-style: italic; font-size: 4.2rem; line-height: 1; color: var(--clay); opacity: .55; }
+.testimonio blockquote { margin: 0; }
+.testimonio p { margin: 0; font-family: var(--serif); font-style: italic; font-size: 1.22rem; line-height: 1.45; color: var(--ink); }
+.testimonio figcaption { margin-top: 1.1rem; padding-top: .8rem; border-top: 1px solid var(--sand); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--clay-deep); font-weight: 600; }
 
 /* Titulares: nunca desbordan en pantallas angostas ni con texto grande del sistema */
 h1, h2, h3 { overflow-wrap: anywhere; text-wrap: balance; }
@@ -993,6 +995,7 @@ h1, h2, h3 { overflow-wrap: anywhere; text-wrap: balance; }
 
 /* Foto de cabecera dentro de una tarjeta */
 .card.has-img { padding-top: 0; }
+.card-img.pos-top { object-position: center 12%; }
 .card-img {
   display: block; width: calc(100% + 2 * clamp(1.5rem, 2.4vw, 2rem));
   margin: 0 calc(-1 * clamp(1.5rem, 2.4vw, 2rem)) 1.1rem;
