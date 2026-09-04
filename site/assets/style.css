@@ -990,3 +990,15 @@ h1, h2, h3 { overflow-wrap: anywhere; text-wrap: balance; }
   h2 { font-size: clamp(1.45rem, 6.4vw, 1.9rem); }
   .split-wide-left > h2 + p.lead, .split > div > h2 + p.lead { margin-top: .6rem; }
 }
+
+/* Foto de cabecera dentro de una tarjeta */
+.card.has-img { padding-top: 0; }
+.card-img {
+  display: block; width: calc(100% + 2 * clamp(1.5rem, 2.4vw, 2rem));
+  margin: 0 calc(-1 * clamp(1.5rem, 2.4vw, 2rem)) 1.1rem;
+  aspect-ratio: 16 / 10; object-fit: cover;
+}
+.grid-index .card.has-img::before {
+  position: absolute; top: .9rem; left: .9rem; z-index: 1; margin: 0;
+  background: rgba(253,250,246,.94); box-shadow: var(--sh-sm);
+}
