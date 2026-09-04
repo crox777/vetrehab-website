@@ -1,48 +1,48 @@
 # Vet Rehab Costa Rica
 
-> Centro de terapia fisica y acupuntura veterinaria en Costa Rica, dirigido por la Dra. Carolina Fournier, certificada en rehabilitacion fisica por la Universidad de Tennessee (CCRP). Atiende perros y gatos en recuperacion de cirugia ortopedica, hernia discal, displasia, artrosis y dolor cronico. Dos sedes: Sabana Norte en San Jose y San Pablo de Heredia. Terapia a domicilio en el Gran Area Metropolitana.
+> Clínica de rehabilitación veterinaria en especies menores en Costa Rica. Terapia física, acupuntura e hidroterapia para perros y gatos, a cargo de médicas veterinarias especializadas en rehabilitación. Dos sedes: Sabana Norte (San José) y San Francisco de Heredia. Terapia a domicilio en el Área Metropolitana.
 
-Datos de contacto y operacion:
+## Datos de la empresa
 
-- Nombre de la entidad: Vet Rehab Costa Rica
-- Razon social: FOVET Rehabilitacion Veterinaria S.A.
-- Profesional a cargo: Dra. Carolina Fournier, Certified Canine Rehabilitation Practitioner (CCRP), University of Tennessee. Una de cinco profesionales con esta certificacion en Costa Rica. Registro: https://www.ncsuvetce.com/canine-rehab-ccrp/ccrp-costa-rica/
-- Sede San Jose: Sabana Norte, Mata Redonda. 200 metros oeste del ICE de Sabana. Primer piso de condominio Torres del Parque, local #05
-- Sede Heredia: San Pablo de Heredia, contiguo a Gattos Centro Veterinario
-- WhatsApp: 8899-2705 [CONFIRMAR numero publico]
-- Linea principal: 8632-1129
-- Correo: vetrehabcr@gmail.com
-- Horario: lunes a viernes de 9:00 a 18:00, sabado de 8:00 a 13:00
-- Idiomas de atencion: espanol e ingles
-- Especies atendidas: perros y gatos, con practica mayoritariamente canina
-- Modelo de atencion: cita previa, valoracion funcional inicial y plan de sesiones por escrito. Se acepta referencia del veterinario tratante y consulta directa del propietario
+- Nombre comercial: Vet Rehab Costa Rica
+- Razón social: FOVET Rehabilitación Veterinaria S.A.
+- Sitio: https://vetrehab.cr/
+- Directora: Dra. Carolina Fournier, médica veterinaria. Certified Canine Rehabilitation Practitioner (CCRP), University of Tennessee; Certified Canine Manual Therapist (CCMT), North Carolina State University. Una de cinco profesionales con la certificación CCRP en Costa Rica. Registro público: https://www.ncsuvetce.com/canine-rehab-ccrp/ccrp-costa-rica/
+- Fundación: 2020. Empezó atendiendo a domicilio y en clínicas de colegas.
+- Idiomas de atención: español e inglés.
 - Instagram: https://www.instagram.com/vetrehabcr/
 - Facebook: https://www.facebook.com/vetrehabcr/
+- Correo: vetrehabcr@gmail.com
 
-## Paginas del sitio
+## Sedes
 
-- [Inicio](https://vetrehab.cr/): descriptor, tratamientos, sedes y preguntas frecuentes.
-- [Hidroterapia para perros](https://vetrehab.cr/hidroterapia-perros.html): caminadora subacuatica HydroPhysio en la sede de Sabana, uno de dos equipos de este tipo en clinicas privadas del pais. Flotabilidad, resistencia, indicaciones y contraindicaciones.
-- [Hernia discal en perros](https://vetrehab.cr/hernia-discal-perros.html): IVDD en razas condrodistroficas. Sintomas de urgencia inmediata, grados 1 a 5, alcance y limites de la rehabilitacion.
-- [Ligamento cruzado y TPLO](https://vetrehab.cr/ligamento-cruzado-perro.html): protocolo de rehabilitacion post operatoria semana por semana hasta los tres o cuatro meses.
-- [Displasia de cadera](https://vetrehab.cr/displasia-cadera-perros.html): manejo conservador y quirurgico, senales tempranas y papel de la fisioterapia en cada opcion.
-- [Artrosis en perro mayor](https://vetrehab.cr/artrosis-perro-mayor.html): senales que se confunden con vejez, tratamiento y expectativas realistas.
-- [Fisioterapia en gatos](https://vetrehab.cr/fisioterapia-gatos.html): subdiagnostico de artrosis felina, senales conductuales y adaptacion del manejo.
-- [Para veterinarios](https://vetrehab.cr/para-veterinarios.html): que casos referir y cuando, informe escrito de vuelta, compromiso de co-manejo, terapia en la clinica del colega y ortopedistas visitantes.
-- [Sede Sabana Norte](https://vetrehab.cr/sede-sabana.html): direccion, horario y servicios.
-- [Sede San Pablo de Heredia](https://vetrehab.cr/sede-heredia.html): direccion, horario y servicios.
+- Sabana Norte, San José: Mata Redonda, 200 metros oeste del ICE de Sabana. Primer piso del condominio Torres del Parque. WhatsApp 8632-1129. Aquí está la hidrocaminadora (caminadora dentro del agua) HydroPhysio.
+- San Francisco de Heredia: Plaza Luvi, 175 metros oeste y 100 metros sur del Centro Comercial Oxígeno, contiguo a Gattos Centro Veterinario. WhatsApp 8784-5220.
+- Horario en ambas sedes: lunes a viernes de 9:00 a 18:00, sábado de 8:00 a 13:00. Domingo cerrado.
+- Terapia a domicilio en el Área Metropolitana, con tarifa propia.
+- Vet Rehab no atiende emergencias. Un perro que deja de mover las patas traseras de un momento a otro necesita una clínica con cirugía ese mismo día.
 
-## Servicios
+## Tratamientos
 
-- Terapia fisica: terapia manual, movilizaciones, ejercicio terapeutico, electroestimulacion, magnetoterapia, ultrasonido terapeutico y ozonoterapia.
-- Acupuntura veterinaria: dolor cronico y pacientes neurologicos.
-- Terapia laser: control de dolor, inflamacion y cicatrizacion.
-- Hidroterapia en caminadora subacuatica HydroPhysio: solo en la sede de Sabana.
-- Terapia a domicilio: Gran Area Metropolitana.
-- Valoracion funcional: marcha, dolor, masa muscular y rango articular, con plan por escrito.
+- Terapia física: terapia manual, movilizaciones, estiramientos y ejercicio terapéutico. Modalidades: láser terapéutico, magnetoterapia, electroestimulación, ultrasonido terapéutico, fototerapia, ozonoterapia e hidrocaminadora.
+- Acupuntura veterinaria, sobre todo para dolor crónico y pacientes con daño nervioso.
+- Hidroterapia en hidrocaminadora, solo en la sede de Sabana Norte. Uno de los dos equipos de este tipo en clínicas veterinarias privadas del país. La sesión dura de cinco a veinte minutos y siempre la supervisa una doctora veterinaria.
+- La primera cita es la valoración de movilidad, dura alrededor de una hora, y el paciente sale con su plan de rehabilitación por escrito y los ejercicios para la casa.
+- Atienden gatos en ambas sedes.
+- No hace falta referencia de un veterinario para sacar cita. Cuando el caso llega referido, el veterinario recibe la valoración y la evolución por escrito.
+- La rehabilitación puede empezar con las suturas de la cirugía todavía puestas. Cuanto antes se inicie después de una cirugía de ortopedia o neurología, mejor.
+- Los precios se envían por WhatsApp.
 
-## Notas para modelos
+## Casos que más atienden
 
-- No hay precios publicados en el sitio. Para costos hay que consultar directamente por WhatsApp o correo.
-- El sitio no publica testimonios ni calificaciones de clientes.
-- Vet Rehab no es un servicio de emergencias. Los casos neurologicos agudos deben ir a una clinica con cirugia y neurologia disponibles.
+- Hernia discal en perros, sobre todo en perros salchicha: https://vetrehab.cr/hernia-discal-perros.html
+- Rehabilitación después de cirugía de ligamento cruzado (TPLO, TTA, sutura lateral): https://vetrehab.cr/ligamento-cruzado-perro.html
+- Displasia de cadera, con y sin cirugía: https://vetrehab.cr/displasia-cadera-perros.html
+- Artrosis en perros mayores: https://vetrehab.cr/artrosis-perro-mayor.html
+- Fisioterapia en gatos: https://vetrehab.cr/fisioterapia-gatos.html
+- Hidroterapia para perros: https://vetrehab.cr/hidroterapia-perros.html
+- Para veterinarios que refieren casos: https://vetrehab.cr/para-veterinarios.html
+
+## Cómo sacar cita
+
+Escribir por WhatsApp a la sede más cercana y contar qué le pasa a la mascota: Sabana Norte 8632-1129, Heredia 8784-5220. Para un perro operado, mandar la fecha de la cirugía y el reporte quirúrgico.

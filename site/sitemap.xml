@@ -1,63 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://vetrehab.cr/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://vetrehab.cr/hernia-discal-perros.html</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/dra-carolina-retrato-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/electroestimulacion-schnauzer-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/equilibrio-pomerania-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/hidrocaminadora-golden-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/hidrocaminadora-perro-feliz-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/hidrocaminadora-pomerania-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/hidrocaminadora-vista-completa-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/laser-gato-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/paciente-labrador-senior-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/paciente-pastor-aleman-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/sede-heredia-fachada-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/terapeuta-dachshund-01.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://vetrehab.cr/hidroterapia-perros.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/hidrocaminadora-pomerania-01.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://vetrehab.cr/para-veterinarios.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <loc>https://vetrehab.cr/hernia-discal-perros.html</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/terapeuta-dachshund-01.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://vetrehab.cr/ligamento-cruzado-perro.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/hidrocaminadora-perro-feliz-01.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://vetrehab.cr/displasia-cadera-perros.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/paciente-pastor-aleman-01.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://vetrehab.cr/artrosis-perro-mayor.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/paciente-labrador-senior-01.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://vetrehab.cr/fisioterapia-gatos.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/laser-gato-01.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://vetrehab.cr/sede-sabana.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/hidrocaminadora-vista-completa-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/terapeuta-abrazo-perro-01.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://vetrehab.cr/sede-heredia.html</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/sede-heredia-fachada-01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://vetrehab.cr/assets/img/sede-heredia-recepcion-01.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://vetrehab.cr/para-veterinarios.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -8,6 +8,11 @@ routes = [
   { pattern = "www.vetrehab.cr", custom_domain = true },
 ]
 
+# GATE = "on" keeps the basic-auth preview gate and the X-Robots-Tag header.
+# tools/launch.py flips it together with the robots meta and robots.txt.
+[vars]
+GATE = "on"
+
 # GATE_USER / GATE_PASS are set with:
 #   wrangler secret put GATE_USER
 #   wrangler secret put GATE_PASS

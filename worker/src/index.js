@@ -15,7 +15,8 @@ p{max-width:28rem;margin:0}</style></head><body>
 
 export default {
   async fetch(request, env) {
-    if (!authorized(request, env)) {
+    const gated = env.GATE !== "off";
+    if (gated && !authorized(request, env)) {
       return new Response(DENIED, {
         status: 401,
         headers: {
@@ -34,8 +35,13 @@ export default {
 
     const asset = await env.ASSETS.fetch(request);
     const res = new Response(asset.body, asset);
-    res.headers.set("Cache-Control", "no-store");
-    res.headers.set("X-Robots-Tag", "noindex, nofollow");
+    if (gated) {
+      res.headers.set("Cache-Control", "no-store");
+      res.headers.set("X-Robots-Tag", "noindex, nofollow");
+    } else {
+      res.headers.set("Cache-Control", "public, max-age=300, stale-while-revalidate=86400");
+      res.headers.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
+    }
     return res;
   },
 };
