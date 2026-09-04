@@ -1,8 +1,8 @@
 name: Deploy to Cloudflare Workers
 
+# Runs manually until CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID exist as
+# repository secrets. Deploys from a workstation use `npx wrangler deploy`.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
