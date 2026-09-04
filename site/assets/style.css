@@ -987,3 +987,10 @@ tbody tr:hover td { background: var(--cream-2); }
 .testimonio { margin: 0; padding: 1.5rem 1.6rem; background: var(--white); border-radius: var(--r-lg); box-shadow: var(--sh); }
 .testimonio p { margin: 0; font-size: .97rem; line-height: 1.6; color: var(--ink-soft); }
 .testimonio figcaption { margin-top: .9rem; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--clay-deep); font-weight: 600; }
+
+/* Titulares: nunca desbordan en pantallas angostas ni con texto grande del sistema */
+h1, h2, h3 { overflow-wrap: anywhere; text-wrap: balance; }
+@media (max-width: 640px) {
+  h2 { font-size: clamp(1.45rem, 6.4vw, 1.9rem); }
+  .split-wide-left > h2 + p.lead, .split > div > h2 + p.lead { margin-top: .6rem; }
+}

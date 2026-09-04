@@ -50,6 +50,7 @@ Texto que Carolina escribió y va textual, sin retocar:
 8. Tics de redacción automática: rayas (—), listas de tres elementos sin conjunción por ritmo, quiasmos, subtítulos que adelantan una conclusión sin contexto, frases-etiqueta que repiten lo obvio, negritas dentro de una frase, mayúsculas de énfasis, "conviene", "cabe destacar", "en consecuencia".
 9. Exclamaciones: solo la del CTA de Carolina. Sin emojis, sin hashtags.
 10. Género de quien refiere: no "él". Escribir "tu veterinario o veterinaria" la primera vez y después "quien refirió el caso" o "su veterinario de cabecera".
+11. Titulares y descripciones de tarjetas escritos como pregunta indirecta o índice de contenido: "Qué señal es urgencia y qué puede esperar", "Cuándo se opera, cuándo se maneja sin cirugía y qué aporta", "Cómo se nota el dolor y cómo se trabaja", "Con qué llegan la mayoría", "Lo que hacemos en consulta", "con lo que hay que saber y con lo que la terapia puede lograr". El titular nombra la cosa ("La consulta", "Los casos que más atendemos", "Límites de la rehabilitación") y la tarjeta afirma un hecho ("La mayoría de los perros con displasia no se opera.").
 
 ## Lo que se conserva
 
