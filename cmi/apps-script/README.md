@@ -21,12 +21,12 @@ borra nada y no toca los archivos originales.
 |---|---|
 | F1 Ingresos por sede | Hoja Entradas: `ingresos_sabana`, `ingresos_heredia` |
 | F2 Margen operativo | Hoja Entradas: ingresos, `costo_ventas`, `gastos_operativos`, `gastos_completos` |
-| F4 Pasivo de sesiones prepagadas | Registro del pasivo prepagado, cruzado con los trackers para separar los pacientes activos |
+| F4 Pasivo de sesiones prepagadas | Registro de paquetes y sesiones pendientes, cruzado con los trackers para separar los pacientes activos |
 | F5 Colchón de caja | Hoja Entradas: `caja_cierre`, `gastos_operativos`, `costo_ventas` |
 | F6 Punto de equilibrio por sede | Hoja Entradas: `costos_directos_sabana`, `costos_directos_heredia` |
 | C1 Satisfacción del cliente | Hoja Entradas: `c1_promedio`, `c1_respuestas` |
 | C2 Clientes nuevos y su origen | Registros de clientes nuevos de las dos sedes |
-| C4 Renovación de paquetes | Registro del pasivo prepagado, con la fecha de venta llena |
+| C4 Renovación de paquetes | Registro de paquetes y sesiones pendientes, con la fecha de venta llena |
 | C5 Pacientes inactivos | Trackers de citas |
 | P1 Citas por mes por sede | Trackers de citas |
 | P2 Domicilios por mes | Trackers de citas |
@@ -45,8 +45,8 @@ que dice el cuadro.
 
 Una sola vez, desde la cuenta `rene@vetrehab.cr`.
 
-1. **Subir las seis hojas a Drive.** Los trackers, el registro del pasivo
-   prepagado, los dos registros de clientes nuevos y la hoja Entradas tienen que
+1. **Subir las seis hojas a Drive.** Los trackers, el registro de paquetes y
+   sesiones pendientes, los dos registros de clientes nuevos y la hoja Entradas tienen que
    ser hojas de cálculo de Google, no archivos de Excel guardados en Drive. Si
    están en `.xlsx`, abrirlos y usar `Archivo` > `Guardar como Hojas de cálculo
    de Google`. Anotar el ID de cada una: es lo que va entre `/d/` y `/edit` en la
@@ -65,7 +65,7 @@ Una sola vez, desde la cuenta `rene@vetrehab.cr`.
    |---|---|
    | `SHEET_TRACKER_SABANA` | ID de la hoja del tracker de Sabana |
    | `SHEET_TRACKER_HEREDIA` | ID de la hoja del tracker de Heredia |
-   | `SHEET_PASIVO` | ID del registro del pasivo prepagado |
+   | `SHEET_PASIVO` | ID del registro de paquetes y sesiones pendientes |
    | `SHEET_CLIENTES_NUEVOS_SABANA` | ID del registro de clientes nuevos de Sabana |
    | `SHEET_CLIENTES_NUEVOS_HEREDIA` | ID del registro de clientes nuevos de Heredia |
    | `SHEET_ENTRADAS_FINANCIERAS` | ID de la hoja Entradas |
@@ -156,7 +156,7 @@ Cómo trata el script los casos conocidos de estos archivos:
 - Toda fila que no se pueda leer se descarta y se cuenta. El conteo aparece en
   la nota del indicador que la habría usado.
 
-El registro del pasivo prepagado necesita `Sede`, `Sesiones compradas`,
+El registro de paquetes y sesiones pendientes necesita `Sede`, `Sesiones compradas`,
 `Monto pagado` y `Sesiones consumidas` o `Sesiones pendientes`. Para C4 hace
 falta además `Fecha de venta` llena en cada fila. Los registros de clientes
 nuevos necesitan `Fecha de registro`, `Canal` y

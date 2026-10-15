@@ -8,7 +8,7 @@
  * con una llamada HTTPS.
  *
  * Qué hace en cada corrida:
- *   1. Abre los dos trackers de citas, el registro del pasivo prepagado, los dos
+ *   1. Abre los dos trackers de citas, el registro de paquetes y sesiones pendientes, los dos
  *      registros de clientes nuevos y la hoja "Entradas".
  *   2. Calcula P1, P2, P3, P5, E1, C5, C2, F4 y C4 desde esas hojas.
  *   3. Lee F1, F2, F5, F6, C1 y E2 de la hoja "Entradas".
@@ -27,7 +27,7 @@
  *
  *      SHEET_TRACKER_SABANA            ID de la hoja del tracker de Sabana
  *      SHEET_TRACKER_HEREDIA           ID de la hoja del tracker de Heredia
- *      SHEET_PASIVO                    ID del registro del pasivo prepagado
+ *      SHEET_PASIVO                    ID del registro de paquetes y sesiones pendientes
  *      SHEET_CLIENTES_NUEVOS_SABANA    ID del registro de clientes nuevos Sabana
  *      SHEET_CLIENTES_NUEVOS_HEREDIA   ID del registro de clientes nuevos Heredia
  *      SHEET_ENTRADAS_FINANCIERAS      ID de la hoja "Entradas"
@@ -137,7 +137,7 @@ var COLUMNAS_PASIVO = {
   sesionesConsumidas: ['sesiones consumidas', 'sesiones usadas'],
   ultimaSesion: ['ultima sesion', 'ultima session', 'fecha ultima sesion'],
   sesionesPendientes: ['sesiones pendientes', 'sesiones restantes'],
-  ingresoDiferido: ['ingreso diferido', 'pasivo', 'saldo diferido'],
+  ingresoDiferido: ['valor de las sesiones pendientes', 'ingreso diferido', 'pasivo', 'saldo diferido'],
   estado: ['estado']
 };
 
@@ -746,14 +746,14 @@ function indicadorF4_(ctx) {
     perspectiva: 'financiera',
     nombre: 'Pasivo de sesiones prepagadas',
     definicion: 'Paquetes vendidos menos sesiones entregadas, valorado al precio pagado, neto de IVA; se reporta el total y la parte de pacientes con actividad en los últimos 90 días',
-    fuente: 'Registro del pasivo prepagado alimentado por recepción',
+    fuente: 'Registro de paquetes y sesiones pendientes, alimentado por recepción',
     dueno: 'Recepción de cada sede, con René como revisor',
     frecuencia: 'Mensual',
     meta: 'Que el pasivo no crezca más rápido que la venta de paquetes. En 2027, redención ≥85% a los 180 días de los paquetes vendidos cada mes, en ambas sedes'
   };
 
   if (!ctx.pasivo.disponible || !ctx.pasivo.filas.length) {
-    return sinLineaBase_(base, 'No se pudo leer el registro del pasivo prepagado.');
+    return sinLineaBase_(base, 'No se pudo leer el registro de paquetes y sesiones pendientes.');
   }
 
   var activos = pacientesActivos_(ctx);
@@ -1020,14 +1020,14 @@ function indicadorC4_(ctx) {
     perspectiva: 'clientes',
     nombre: 'Renovación de paquetes',
     definicion: 'Clientes que agotaron un paquete en el mes y compraron otro dentro de los 30 días siguientes, entre el total que agotó',
-    fuente: 'Registro del pasivo prepagado, con la fecha de compra de cada paquete',
+    fuente: 'Registro de paquetes y sesiones pendientes, con la fecha de compra de cada paquete',
     dueno: 'Recepción de cada sede',
     frecuencia: 'Mensual',
     meta: 'Meta fijada después de un trimestre con fecha de compra registrada'
   };
 
   if (!ctx.pasivo.disponible || !ctx.pasivo.tieneFechaVenta) {
-    return sinLineaBase_(base, 'Por instalar: requiere la columna de fecha de venta llena en el registro del pasivo prepagado.');
+    return sinLineaBase_(base, 'Por instalar: requiere la columna de fecha de venta llena en el registro de paquetes y sesiones pendientes.');
   }
 
   var mes = ctx.mesAgenda;
