@@ -15,6 +15,15 @@ p{max-width:28rem;margin:0}</style></head><body>
 
 export default {
   async fetch(request, env) {
+    // Canonical origin first: https and no www, before any credentials travel.
+    const url = new URL(request.url);
+    const local = url.hostname === "localhost" || url.hostname === "127.0.0.1";
+    if (!local && (url.protocol === "http:" || url.hostname.startsWith("www."))) {
+      url.protocol = "https:";
+      if (url.hostname.startsWith("www.")) url.hostname = url.hostname.slice(4);
+      return Response.redirect(url.toString(), 301);
+    }
+
     const gated = env.GATE !== "off";
     if (gated && !authorized(request, env)) {
       return new Response(DENIED, {
@@ -27,20 +36,23 @@ export default {
       });
     }
 
-    const url = new URL(request.url);
-    if (url.hostname.startsWith("www.")) {
-      url.hostname = url.hostname.slice(4);
-      return Response.redirect(url.toString(), 301);
-    }
-
     const asset = await env.ASSETS.fetch(request);
     const res = new Response(asset.body, asset);
     if (gated) {
       res.headers.set("Cache-Control", "no-store");
       res.headers.set("X-Robots-Tag", "noindex, nofollow");
     } else {
-      res.headers.set("Cache-Control", "public, max-age=300, stale-while-revalidate=86400");
+      // Images, CSS and JS live under /assets/. CSS/JS are not hashed, so one week tops.
+      res.headers.set(
+        "Cache-Control",
+        asset.ok && url.pathname.startsWith("/assets/")
+          ? "public, max-age=604800"
+          : "public, max-age=300, stale-while-revalidate=86400",
+      );
       res.headers.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
+      res.headers.set("X-Content-Type-Options", "nosniff");
+      res.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+      res.headers.set("X-Frame-Options", "SAMEORIGIN");
     }
     return res;
   },
