@@ -5,3 +5,7 @@ PREVIEW.html
 fotos-candidatas/_archivo-instagram/
 .porkbun-keys.md
 cmi/.ingest-token
+cmi/feeder/salida_*.json
+cmi/feeder/entradas_20*.csv
+cmi/feeder/historial.json
+cmi/feeder/__pycache__/
