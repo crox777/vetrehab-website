@@ -36,7 +36,31 @@ export default {
       });
     }
 
-    const asset = await env.ASSETS.fetch(request);
+    // html_handling = "none" (wrangler.toml) serves asset paths literally:
+    // it stopped mapping "/" to "/index.html", and stopped treating an
+    // extensionless URL as an alias for its .html file. Replace just those
+    // two pieces of the old default behavior that the site still needs.
+    let assetRequest = request;
+    if (url.pathname === "/") {
+      const indexUrl = new URL(url);
+      indexUrl.pathname = "/index.html";
+      assetRequest = new Request(indexUrl, request);
+    }
+
+    let asset = await env.ASSETS.fetch(assetRequest);
+
+    // Pre-existing extensionless URLs (indexed before the site standardized
+    // on .html canonicals): 301 to the .html file instead of 404-ing, so
+    // links and bookmarks out there keep working.
+    if (asset.status === 404 && !url.pathname.endsWith("/") && !url.pathname.includes(".")) {
+      const htmlUrl = new URL(url);
+      htmlUrl.pathname = url.pathname + ".html";
+      const htmlAsset = await env.ASSETS.fetch(new Request(htmlUrl, request));
+      if (htmlAsset.ok) {
+        return Response.redirect(htmlUrl.toString(), 301);
+      }
+    }
+
     const res = new Response(asset.body, asset);
     if (gated) {
       res.headers.set("Cache-Control", "no-store");
