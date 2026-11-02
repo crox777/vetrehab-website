@@ -20,3 +20,9 @@ Página de contenido revisada cada semana (rotación): index, sede-sabana, sede-
 | 2026-10-26 | hernia discal perro tratamiento Costa Rica | No aparece | Ninguna clínica; solo un trabajo de graduación de la UNA y literatura académica de España/Colombia | index |
 | 2026-10-26 | fisioterapia veterinaria Heredia | No aparece | Ninguna clínica veterinaria; aparece una clínica de fisioterapia humana en Heredia (no veterinaria) | index |
 | 2026-10-26 | acupuntura veterinaria Costa Rica | No aparece | Ninguna clínica costarricense; un comentario de foro y una clínica en Puerto Rico | index |
+| 2026-11-02 | fisioterapia para perros Costa Rica | No aparece | Ninguna clínica veterinaria tica; fisioterapeutas humanos (Fisioterapia Kran, Physical Care, MG Fisioterapia) y notas de prensa (Teletica, El Financiero) | sede-sabana |
+| 2026-11-02 | rehabilitación veterinaria San José | No aparece | Ninguno; programas de voluntariado y estudio con fauna silvestre (Rescue Center Costa Rica, UC Davis), no clínicas privadas | sede-sabana |
+| 2026-11-02 | hidroterapia perros Costa Rica | No aparece | Ninguno tico; resultados de Colombia, España, Brasil y una escuela canina en Nicaragua | sede-sabana |
+| 2026-11-02 | hernia discal perro tratamiento Costa Rica | No aparece | Ninguna clínica privada; solo una pasantía de la UNA en el Hospital de Especies Menores y Silvestres y literatura académica de España | sede-sabana |
+| 2026-11-02 | fisioterapia veterinaria Heredia | No aparece | Ninguna clínica veterinaria; dos clínicas de fisioterapia humana en Heredia (Fisioterapia Cuerpo Integral, PHYSIO TACT) | sede-sabana |
+| 2026-11-02 | acupuntura veterinaria Costa Rica | No aparece | **Nuevo esta semana:** Perrolístico, de la Dra. María José Pacheco, mencionada en El Financiero como clínica dedicada a acupuntura y medicina alternativa veterinaria desde 2019. Primera vez que aparece un competidor tico con nombre propio en esta consulta | sede-sabana |
